@@ -19,3 +19,20 @@ const getCurrentWeather = async (lat, lon) => {
   const data = await response.json();
   return data;
 };
+
+const currentCond = (conditions) => {
+  const currentCondElem = document.querySelector(
+    '.current-conditions'
+  );
+  currentCondElem.innerHTML = '';
+  const htmlString = `
+  <h2>Current Conditions</h2>
+  <img src="http://openweathermap.org/img/wn/${conditions.iconId}@2x.png" />
+  <div class="current">
+    <div class="temp">${conditions.temperature}℃</div>
+    <div class="condition">${conditions.description}</div>
+  </div>
+  `;
+
+  currentCondElem.insertAdjacentHTML('beforeend', htmlString);
+};
