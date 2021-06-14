@@ -1,0 +1,25 @@
+{
+  "name": "weatherwidget---starter-files",
+  "version": "1.0.0",
+  "description": "A weather Widget app tthat allows the user to see a five day forcast!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtabinski/WeatherWidget.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtabinski/WeatherWidget/issues"
+  },
+  "homepage": "https://github.com/jtabinski/WeatherWidget#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
