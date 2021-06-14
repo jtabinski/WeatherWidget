@@ -36,3 +36,25 @@ const currentCond = (conditions) => {
 
   currentCondElem.insertAdjacentHTML('beforeend', htmlString);
 };
+
+const dayHTML = (dayCond) => {
+  return `
+  <div class="day">
+    <h3>${dayCond.name}</h3>
+    <img src="http://openweathermap.org/img/wn/${dayCond.iconId}@2x.png" />
+    <div class="description">${dayCond.description}</div>
+    <div class="temp">
+      <span class="high">${dayCond.highTemp}℃</span>/<span class="low">${dayCond.lowTemp}℃</span>
+    </div>
+  </div>
+  `;
+};
+
+const dayForcastelem = (dayObject) => {
+  const forecastElem = document.querySelector('.forecast');
+  forecastElem.innerHTML = '';
+
+  for (let i = 0; i < 5; i++) {
+    forecastElem.innerHTML += dayForecastHTML(dayObject[i]);
+  }
+};
