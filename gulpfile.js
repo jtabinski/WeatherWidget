@@ -10,4 +10,8 @@ function scriptAdd() {
 function htmlAdd() {
   return src('src/*.html').pipe(dest('dist/html'));
 }
-exports.default = parallel(scriptAdd, htmlAdd);
+
+function styleAdd() {
+  return src('src/*.css').pipe(dest('dist/styles'));
+}
+exports.default = parallel(scriptAdd, htmlAdd, styleAdd);
