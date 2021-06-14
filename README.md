@@ -1,2 +1,2 @@
 # WeatherWidget
-A weather Widget app tthat allows the user to see a five day forcast!
+A weather Widget app that allows the user to see a five day forcast!
